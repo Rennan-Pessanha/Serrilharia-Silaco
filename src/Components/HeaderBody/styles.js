@@ -6,6 +6,7 @@ export const Container = styled.div`
   background: url('./Imagem/SilasBackground.png');
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 `;
 
 export const Content = styled.div`
@@ -48,6 +49,7 @@ export const NavContent = styled.div`
 `;
 
 export const Navs = styled.nav`
+
   width: 68px;
   height: 19px;
   font-family: 'Montserrat';
@@ -55,11 +57,16 @@ export const Navs = styled.nav`
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+
 
   flex: none;
   order: 1;
   flex-grow: 1;
+
+  &:hover {
+    color: #red;
+    transform: scale(1.2); 
+  }
 `;
 
 export const NossosProdutos = styled.div`

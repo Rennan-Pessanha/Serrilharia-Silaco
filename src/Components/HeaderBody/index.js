@@ -1,5 +1,6 @@
 import React from 'react'
 import * as C from './styles.js'
+import { Link } from 'react-router-dom';
 
 export const HeaderBody = () => {
   return (
@@ -8,21 +9,21 @@ export const HeaderBody = () => {
             <C.Logo src='./Imagem/LogoSerralheria.png' />
             <C.NavContent>
 
-                <C.Navs>
-                    Home
-                </C.Navs>
+            <C.Navs>
+            <Link to="/">Home</Link>
+            </C.Navs>
 
-                <C.Navs>
-                    Empresa
-                </C.Navs>
+            <C.Navs>
+            <Link to="/Perfil">Empresa</Link>
+            </C.Navs>
 
-                <C.Navs>
-                    Produtos
-                </C.Navs>
+            <C.Navs>
+            <Link to="/Produtos">Produtos</Link>
+            </C.Navs>
 
-                <C.Navs>
-                    Contatos
-                </C.Navs>
+            <C.Navs>
+            <Link to="/FaleConosco">Contatos</Link>
+            </C.Navs>
             </C.NavContent>
         </C.Content>
 

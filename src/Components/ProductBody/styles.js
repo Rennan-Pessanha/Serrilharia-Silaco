@@ -4,6 +4,8 @@ export const Container = styled.div`
   height: 3500px;
   width: 100%;
   background-color: #000000;
+  overflow-x: hidden;
+  
 
   @media (max-width: 768px) {
     height: 4900px;
@@ -59,6 +61,13 @@ export const ProductContent = styled.div`
     css`
       flex-direction: row-reverse;
     `}
+
+    @media (max-width: 1160px) {
+      flex-direction: column;
+      margin-top: 50px;
+      align-items: center;
+      padding: 10px;
+    }
 
   @media (max-width: 768px) {
     flex-direction: column;

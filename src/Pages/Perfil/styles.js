@@ -2,10 +2,16 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
   height: 140vh;
   background: url('./Imagem/SilasBackground.png');
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 1650px) {
+    height: 200vh;
+  }
 
   @media (max-width: 1440px) {
     height: 180vh;
@@ -162,12 +168,16 @@ export const Textp = styled.p`
 
 export const FooterPerfil = styled.div`
   position: relative;
-  height: 100vh;
+  height: 800px;
   width: 100%;
   background-color: #242424;
 
   @media (max-width: 768px) {
-    height: 270vh;
+    height: 1350px;
+  }
+
+  @media (max-width: 468px) {
+    height: 1500px;
   }
 `;
 
