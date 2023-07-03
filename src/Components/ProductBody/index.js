@@ -16,23 +16,41 @@ export const ProductBody = () => {
             <C.ProductInfo>
               <C.ProductTitle>Perfis Especiais</C.ProductTitle>
               <p>Descrição do Produto</p>
-              <C.AccessButton>Acessar</C.AccessButton>
+              <C.AccessButton to="/PerfisEspeciais">Acessar</C.AccessButton>
             </C.ProductInfo>
           </C.ProductContent>
 
           <C.ProductContent reversed>
-            <C.ProductImage src="./Imagem/Produtos-Homepage/PerfisEspeciais.png" alt="Outro Produto" />
+            <C.ProductImage src="./Imagem/Produtos/Tubular/TubularI.png" alt="Outro Produto" />
             <C.ProductInfo>
-              <C.ProductTitle leftT>Outro Produto</C.ProductTitle>
+              <C.ProductTitle leftT>Perfil Tubular</C.ProductTitle>
               <p>Outra descrição do produto</p>
-              <C.AccessButton left>Acessar</C.AccessButton>
+              <C.AccessButton to="/PerfisTubular" left>Acessar</C.AccessButton>
+            </C.ProductInfo>
+          </C.ProductContent>
+
+          <C.ProductContent>
+            <C.ProductImage src="./Imagem/Produtos/PerfisDePerfiladeira/Perfiladeira1.jpeg" alt="Produto" />
+            <C.ProductInfo>
+              <C.ProductTitle>Perfis de Perfiladeira</C.ProductTitle>
+              <p>Perfis de Perfiladeira</p>
+              <C.AccessButton to="/PerfisEspeciais">Acessar</C.AccessButton>
+            </C.ProductInfo>
+          </C.ProductContent>
+
+          <C.ProductContent reversed>
+            <C.ProductImage src="./Imagem/Produtos/Soldado/Soldado5.png" alt="Outro Produto" />
+            <C.ProductInfo>
+              <C.ProductTitle leftT>Perfil Soldado</C.ProductTitle>
+              <p>Perfil Soldado</p>
+              <C.AccessButton to="/PerfilSoldado" left>Acessar</C.AccessButton>
             </C.ProductInfo>
           </C.ProductContent>
 
           <C.ProductContent>
             <C.ProductImage src="./Imagem/Produtos-Homepage/PerfisEspeciais.png" alt="Produto" />
             <C.ProductInfo>
-              <C.ProductTitle>Perfis Especiais</C.ProductTitle>
+              <C.ProductTitle>Tubos Industriais</C.ProductTitle>
               <p>Descrição do Produto</p>
               <C.AccessButton>Acessar</C.AccessButton>
             </C.ProductInfo>
@@ -41,26 +59,8 @@ export const ProductBody = () => {
           <C.ProductContent reversed>
             <C.ProductImage src="./Imagem/Produtos-Homepage/PerfisEspeciais.png" alt="Outro Produto" />
             <C.ProductInfo>
-              <C.ProductTitle leftT>Outro Produto</C.ProductTitle>
-              <p>Outra descrição do produto</p>
-              <C.AccessButton left>Acessar</C.AccessButton>
-            </C.ProductInfo>
-          </C.ProductContent>
-
-          <C.ProductContent>
-            <C.ProductImage src="./Imagem/Produtos-Homepage/PerfisEspeciais.png" alt="Produto" />
-            <C.ProductInfo>
-              <C.ProductTitle>Perfis Especiais</C.ProductTitle>
-              <p>Descrição do Produto</p>
-              <C.AccessButton>Acessar</C.AccessButton>
-            </C.ProductInfo>
-          </C.ProductContent>
-
-          <C.ProductContent reversed>
-            <C.ProductImage src="./Imagem/Produtos-Homepage/PerfisEspeciais.png" alt="Outro Produto" />
-            <C.ProductInfo>
-              <C.ProductTitle leftT>Outro Produto</C.ProductTitle>
-              <p>Outra descrição do produto</p>
+              <C.ProductTitle leftT>Perfil Laminado</C.ProductTitle>
+              <p>Perfil Laminado</p>
               <C.AccessButton left>Acessar</C.AccessButton>
             </C.ProductInfo>
           </C.ProductContent>

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -11,15 +12,14 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  height: 200px;
-  display: flex;
-  width: 100%;
+height: 200px;
+display: flex;
+width: 100%;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
+@media (max-width: 768px) {
+  height: auto;
+  flex-direction: column;
+}
 `;
 
 export const Logo = styled.img`
@@ -30,38 +30,62 @@ export const Logo = styled.img`
   margin-top: 12px;
 
   @media (max-width: 768px) {
-    margin-left: 0;
+    margin-left: 30%;
     margin-top: 20px;
+  }
+
+  @media (max-width: 425px) {
+    margin-left: 18%;
   }
 `;
 
 export const NavContent = styled.div`
-  margin-top: 75px;
+  margin-top: 30px;
   margin-left: 20%;
   display: flex;
   width: 431px;
   height: 23px;
 
-  @media (max-width: 768px) {
-    margin-top: 20px;
-    margin-left: 0;
-    justify-content: center;
+  @media (max-width: 425px) {
+    margin-left: 0%;
+  }
+
+  @media (max-width: 320px) {
+    margin-left: 50%;
+
+    flex-direction: column;
+    display: flex;
+    width: 431px;
+    margin-top: 0px;
+    margin-bottom: 90px;
   }
 `;
 
-export const Navs = styled.nav`
+export const Navs = styled(Link)`
+
   width: 68px;
   height: 19px;
   font-family: 'Montserrat';
   font-style: normal;
+  text-decoration: none;
+  color: #ffff;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+
 
   flex: none;
   order: 1;
   flex-grow: 1;
+
+  &:hover {
+    color: #red;
+    transform: scale(1.2); 
+  }
+
+  @media (max-width: 320px) {
+    margin-top: 20px;
+  }
 `;
 
 export const FormContent = styled.div`
@@ -156,6 +180,10 @@ export const ContainerFooter = styled.div`
   height: 654px;
   width: 100%;
   background-color: #000;
+
+  @media (max-width: 768px) {
+    height: 750px;
+  }
 `;
 
 export const ContentFooter = styled.div`
@@ -166,6 +194,7 @@ export const ContentFooter = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    
   }
 `;
 

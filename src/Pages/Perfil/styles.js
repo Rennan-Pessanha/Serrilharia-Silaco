@@ -1,32 +1,72 @@
 import { styled } from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  height: 140vh;
+  height: 150vh;
   background: url('./Imagem/SilasBackground.png');
   background-size: cover;
   background-repeat: no-repeat;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @media (max-width: 1650px) {
     height: 200vh;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   @media (max-width: 1440px) {
     height: 180vh;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
+  @media (max-width: 1069px) {
+    height: 250vh;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+
   @media (max-width: 1024px) {
-    height: 230vh;
+    height: 260vh;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   @media (max-width: 768px) {
     height: 240vh;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: 612px) {
+    height: 300vh;
   }
 
   @media (max-width: 480px) {
-    height: 360vh;
+    height: 550vh;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: 750px) {
+    @media (max-width: 480px) {
+      height: 590vh;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    @media (max-width: 480px) {
+      height: 590vh;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
 `;
 
@@ -62,26 +102,51 @@ export const NavContent = styled.div`
   width: 431px;
   height: 23px;
 
-  @media (max-width: 768px) {
-    margin-top: 20px;
-    margin-left: 0;
-    justify-content: center;
+  @media (max-width: 425px) {
+    margin-left: 0%;
+  }
+
+  @media (max-width: 320px) {
+    margin-left: 50%;
+
+    flex-direction: column;
+    display: flex;
+    width: 431px;
+    margin-top: 0px;
+    margin-bottom: 90px;
   }
 `;
 
-export const Navs = styled.nav`
+export const Navs = styled(Link)`
   width: 68px;
   height: 19px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  text-decoration: none;
   line-height: 24px;
   color: #ffffff;
 
   flex: none;
   order: 1;
   flex-grow: 1;
+
+  &:hover {
+    transform: scale(1.2); 
+  }
+
+  @media (max-width: 375px) {
+    font-size: 15px;
+    margin-right: 2px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 320px) {
+    margin-top: 20px;
+    margin-left: 23%;
+    margin-bottom:
+  }
 `;
 
 export const PerfilTitle = styled.div`
@@ -90,9 +155,13 @@ export const PerfilTitle = styled.div`
   margin-left: 40%;
 
   @media (max-width: 768px) {
-    margin-left: 0;
+    margin-left: 0px;
     text-align: center;
     margin-top: 30px;
+  }
+
+  @media (max-width: 320px) {
+    margin-top: 30%;
   }
 `;
 
@@ -109,7 +178,12 @@ export const PerfilContent = styled.div`
   height: 247px;
 
   @media (max-width: 768px) {
-    margin-left: 0;
+    margin-left: 2;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 0%;
+    margin-bottom: 10%
   }
 `;
 
@@ -132,17 +206,36 @@ export const CompanyContent = styled.div`
   margin-top: 170px;
   margin-left: 40%;
   height: 247px;
+  margin-bottom: 10%;
 
   @media (max-width: 768px) {
     margin-left: 0;
     text-align: center;
     margin-top: 28%;
+    margin-bottom: 5%;
   }
+
+  @media (max-width: 612px) {
+    margin-top: 48%;
+  }
+
 
   @media (max-width: 480px) {
     margin-left: 0;
     text-align: center;
-    margin-top: 110%;
+    margin-top: 50%;
+    margin-bottom: 5%;
+  }
+
+  @media (max-width: 425px) {
+    margin-top: 77%;
+  }
+
+  @media (max-width: 375px) {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 180%;
+
   }
 `;
 
@@ -151,6 +244,17 @@ export const History = styled.div`
   flex-direction: column;
   margin-left: -50%;
   flex-shrink: 0;
+  margin-bottom: 10%;
+
+  @media (max-width: 612px) {
+    margin-left: 0%;
+    width: 550px;
+  }
+
+  @media (max-width: 375px) {
+    margin-left: 12%;
+    width: 270px;
+  }
 `;
 
 export const Textp = styled.p`
@@ -171,9 +275,24 @@ export const FooterPerfil = styled.div`
   height: 800px;
   width: 100%;
   background-color: #242424;
+  padding-bottom: 20px;
+  padding: 30px;
+
+  @media (max-width: 1124px) {
+    height: 1000px;
+    padding-right: 20px;
+    
+
+  @media (max-width: 1024px) {
+    height: 1000px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
   @media (max-width: 768px) {
     height: 1350px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   @media (max-width: 468px) {

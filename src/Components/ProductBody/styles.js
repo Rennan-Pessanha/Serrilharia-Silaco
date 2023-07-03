@@ -1,16 +1,42 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   height: 3500px;
   width: 100%;
   background-color: #000000;
   overflow-x: hidden;
-  
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (max-width: 1415px) {
+    height: 5700px;
+  }
 
   @media (max-width: 768px) {
-    height: 4900px;
+    height: 5100px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
-`;
+
+  @media (max-width: 425px) {
+    height: 4100px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: 375px) {
+    height: 3800px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  @media (max-width: 320px) {
+    height: 3890px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}`
 
 export const TextWrapper = styled.div`
   margin-left: 40%;
@@ -62,18 +88,12 @@ export const ProductContent = styled.div`
       flex-direction: row-reverse;
     `}
 
-    @media (max-width: 1160px) {
+    @media (max-width: 1415px) {
       flex-direction: column;
       margin-top: 50px;
       align-items: center;
       padding: 10px;
     }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
 `;
 
 export const ProductImage = styled.img`
@@ -122,11 +142,20 @@ export const ProductTitle = styled.h2`
   }
 `;
 
-export const AccessButton = styled.button`
-  width: 245px;
-  height: 79px;
-  font-size: 36px;
-  border-radius: 50px;
+export const AccessButton = styled(Link)`
+width: 245px;
+height: 79px;
+font-size: 36px;
+border-radius: 50px;
+text-align: center;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #ffffff;
+color: #000;
+
+
 
   ${props =>
     props.left &&

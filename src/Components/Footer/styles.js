@@ -4,6 +4,8 @@ export const Container = styled.div`
   height: 654px;
   width: 100%;
   background-color: #000000DB;
+  padding-right: 20px;
+  padding-left: 20px;
 `;
 
 export const Content = styled.div`
@@ -14,6 +16,7 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    
   }
 `;
 

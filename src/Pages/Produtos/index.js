@@ -7,7 +7,7 @@ const renderCard = (imageSrc, altText, description) => (
     <C.Card>
       <C.CardImage src={imageSrc} alt={altText} />
       <C.CardDescription>{description}</C.CardDescription>
-      <C.AccessButton>Acessar</C.AccessButton>
+      <C.AccessButton to="/FaleConosco">Acessar</C.AccessButton>
     </C.Card>
   );
 

@@ -7,6 +7,9 @@ import Perfil from './Pages/Perfil';
 import Produtos from './Pages/Produtos';
 import FaleConosco from './Pages/FaleConosco/index.js';
 import PerfisEspeciais from './Pages/ProdutosList/PerfisEspeciais';
+import PerfisTubular from './Pages/ProdutosList/PerfisTubular';
+import PerfisPerfiladeira from './Pages/ProdutosList/PerfisPerfiladeira';
+import PerfilSoldado from './Pages/ProdutosList/PerfisSoldado';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +21,10 @@ root.render(
       <Route path="/Produtos" element={<Produtos />} />
       <Route path="/FaleConosco" element={<FaleConosco />} />
       <Route path="/PerfisEspeciais" element={<PerfisEspeciais />} />
+      <Route path="/PerfisTubular" element={<PerfisTubular />} />
+      <Route path="/PerfisPerfiladeira" element={<PerfisPerfiladeira />} />
+      <Route path="/PerfilSoldado" element={ <PerfilSoldado />} />
+      
     </Routes>
   </BrowserRouter>
 </React.StrictMode>,

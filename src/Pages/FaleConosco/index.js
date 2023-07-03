@@ -9,24 +9,25 @@ export const FaleConosco = () => {
     <C.Container>
         <C.Content>
         <C.Logo src='./Imagem/LogoSerralheria.png' />
-        <C.NavContent>
 
-                <C.Navs>
-                <Link to="/">Home</Link>
-                </C.Navs>
+    <C.NavContent>
+        
+            <C.Navs>
+            <C.Navs to="/">Home</C.Navs>
+            </C.Navs>
 
-                <C.Navs>
-                <Link to="/Perfil">Empresa</Link>
-                </C.Navs>
+            <C.Navs>
+            <C.Navs to="/Perfil">Empresa</C.Navs>
+            </C.Navs>
 
-                <C.Navs>
-                <Link to="/Produtos">Produtos</Link>
-                </C.Navs>
+            <C.Navs>
+            <C.Navs to="/Produtos">Produtos</C.Navs>
+        </C.Navs>
 
-                <C.Navs>
-                <Link to="/FaleConosco">Contatos</Link>
-                </C.Navs>
-                </C.NavContent>
+        <C.Navs>
+        <C.Navs to="/FaleConosco">Contatos</C.Navs>
+        </C.Navs>
+        </C.NavContent>
         </C.Content>
 
         <C.FormContent>

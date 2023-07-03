@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
 height: 4800px;
@@ -101,13 +102,16 @@ export const CardDescription = styled.p`
     font-weight: 500;
 `;
 
-export const AccessButton = styled.button`
-    width: 236px;
-    height: 76px;
-    justify-content: center;
-    align-items: center;
+export const AccessButton = styled(Link)`
+    width: 245px;
+    height: 79px;
     font-size: 36px;
-    font-family: Montserrat;
-    font-weight: 500;
     border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000;
 `;

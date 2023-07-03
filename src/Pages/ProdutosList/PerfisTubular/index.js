@@ -1,9 +1,9 @@
 import React from 'react'
-import * as C from './Styles.js'
+import * as C from './styles.js'
 import Footer from '../../../Components/Footer/index.js'
 import { Link } from 'react-router-dom';
 
-export const PerfisEspeciais = () => {
+export const PerfisTubular = () => {
   return (
     <div>
     <C.Container>
@@ -34,23 +34,23 @@ export const PerfisEspeciais = () => {
 
 
           <C.TitleWrapper>
-            <C.Title>Perfis Especiais</C.Title>
+            <C.Title>Perfis Tubular</C.Title>
           </C.TitleWrapper>
 
           <C.Wrapper>
             <C.ImageWrapper>
-              <C.Image src="../Imagem/Produtos/PerfisEspeciais/Especial1.jpg" />
-              <C.ImageName>Perfil cartola 6,35 x 65 x 180 x 30 x 6000S</C.ImageName>
+              <C.Image src="./Imagem/Produtos/Tubular/TubularII.png" />
+              <C.ImageName>Tubular 4,75 x 200 x 200 x 7500</C.ImageName>
             </C.ImageWrapper>
 
             <C.ImageWrapper>
-            <C.Image src="../Imagem/Produtos/PerfisEspeciais/Especial2.jpg" />
-              <C.ImageName>Perfil cartola 6,35 x 65 x 180 x 30 x 6000S</C.ImageName>
+            <C.Image src="../Imagem/Produtos/Tubular/TubularIII.png" />
+              <C.ImageName>Tubular 4,75 x 250 x 80 x 8000</C.ImageName>
             </C.ImageWrapper>
 
             <C.ImageWrapper>
-            <C.Image src="../Imagem/Produtos/PerfisEspeciais/Especial3.jpg" />
-              <C.ImageName>Perfil cartola 6,35 x 65 x 180 x 30 x 6000S</C.ImageName>
+            <C.Image src="./Imagem/Produtos/Tubular/TubularIV.png" />
+              <C.ImageName>Tubular 390 x 400 x 8,00 x 7200</C.ImageName>
             </C.ImageWrapper>
           </C.Wrapper>
 
@@ -58,10 +58,10 @@ export const PerfisEspeciais = () => {
             Lorem ipsum dolor sit amet consectetur. Ut viverra enim egestas blandit sodales risus libero. Elementum semper urna faucibus lobortis. Justo rhoncus blandit gravida massa. Risus donec id cursus blandit amet tempor eu. Blandit diam nunc quis urna. Blandit dui dictum augue ultricies tincidunt non ac non vulputate. Quam etiam donec ornare ut. Euismod bibendum ut morbi elementum in tempus dignissim non. Urna feugiat proin purus leo urna.
           </C.Paragraph>
 
-            <C.AccessButtonWrapper>
+          <C.AccessButtonWrapper>
               <C.AccessButton to="/FaleConosco">COMPRAR</C.AccessButton>
             </C.AccessButtonWrapper>
-
+            
     </C.Container>
     <Footer />
 
@@ -70,4 +70,4 @@ export const PerfisEspeciais = () => {
   )
 }
 
-export default PerfisEspeciais
+export default PerfisTubular
